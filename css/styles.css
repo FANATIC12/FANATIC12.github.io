@@ -415,7 +415,18 @@ table {
 
 .working {
 	list-style: none;
+	padding: 0;
 }
+
+.working li {
+	padding: 5px 20px;
+	margin-bottom: 5px;
+	border-left: 10px solid #fb565a;
+}
+.working li:nth-child(2){border-color: #00ca74;}
+.working li:nth-child(3){border-color: #efc84a;}
+
+
 
 .projects {
 	list-style: none;
@@ -434,27 +445,25 @@ table {
 	opacity: 0.1;
 }
 
-.map {
+.map-contacts {
 	position: relative;
-	height: 416px;
-	
 }
 
-.map img {
-	position: absolute;
+.map {
+	height: 516px;
+	padding: 10px;
 }
 
 .contacts {
 	position: absolute;
 	padding: 5px;
-	margin-left: 140px;
-	margin-top: 54px;
-	display: block;
+	top:  100px;
+	left: 100px;
+	
 	text-align: center;
 	width: 319px;
 	height: 308px;
 	background-color: #ffffff;
-	left: 80px;
 	
 	box-shadow: 0px 19px 86px -7px #000000;
 }
@@ -468,12 +477,6 @@ table {
 	margin-top: 60px;
 	display: block;
 	text-align: center;
-}
-
-.marker img {
-	position: absolute;
-	left: 57.9%;
-	top: 22%
 }
 
 .main-footer {
@@ -739,10 +742,43 @@ table {
 }
 
 .catalog-item {
-	padding: 20px 19px;
-	margin: 10px 10px;
+	padding: 0;
+	margin: 20px 10px;
+	padding-bottom: 0;
 	
+	border-top: 30px solid #f1f1f1;
+	border-radius: 10px;
 	border: 1px solid red;
+}
+
+.catalog-item-image {
+	position: absolute;
+	
+}
+
+.catalog-item-price {
+	margin-top: 360px;
+	margin-bottom: 0;
+	
+	display: block;
+	width: 360px;
+	background-color: #f1f1f1;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	
+	position: relative;
+}
+
+.catalog-item-image:hover {
+	
+}
+
+.catalog-item-price a {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
 }
 
 .legend1 {
@@ -760,16 +796,19 @@ table {
 	display: inline-block;
 	
 	list-style: none;
-	
 }
 
 .pagination-list {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
-	margin: 0;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
 	list-style: none;
 	align-items: center;
+	
+	border: 1px solid green;
 }
 
 .pagination-item {
@@ -959,3 +998,4 @@ table {
 
 
 /* ßßßßßßßßßßßßßßßßßßßß */
+
